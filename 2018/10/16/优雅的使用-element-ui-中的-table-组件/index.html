@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Vue.js,Element,JavaScript," />
 
 
 
@@ -86,16 +86,18 @@
 
 
 
-<meta name="description" content="前端分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="暴风骤雨">
-<meta property="og:url" content="https://seadog16.github.io/index.html">
+<meta name="description" content="作者：ywwhack链接：https://juejin.im/post/5a100d09f265da4324800807来源：掘金  经常使用 element-ui 的小伙伴应该对 el-table 组件非常熟悉，通常它长下面这个样子： &amp;lt;template&amp;gt;  &amp;lt;el-table :data=&quot;tableData&quot;&amp;gt;    &amp;lt;el-table-column">
+<meta name="keywords" content="Vue.js,Element,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优雅的使用 element-ui 中的 table 组件">
+<meta property="og:url" content="https://seadog16.github.io/2018/10/16/优雅的使用-element-ui-中的-table-组件/index.html">
 <meta property="og:site_name" content="暴风骤雨">
-<meta property="og:description" content="前端分享">
+<meta property="og:description" content="作者：ywwhack链接：https://juejin.im/post/5a100d09f265da4324800807来源：掘金  经常使用 element-ui 的小伙伴应该对 el-table 组件非常熟悉，通常它长下面这个样子： &amp;lt;template&amp;gt;  &amp;lt;el-table :data=&quot;tableData&quot;&amp;gt;    &amp;lt;el-table-column">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-16T16:56:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="暴风骤雨">
-<meta name="twitter:description" content="前端分享">
+<meta name="twitter:title" content="优雅的使用 element-ui 中的 table 组件">
+<meta name="twitter:description" content="作者：ywwhack链接：https://juejin.im/post/5a100d09f265da4324800807来源：掘金  经常使用 element-ui 的小伙伴应该对 el-table 组件非常熟悉，通常它长下面这个样子： &amp;lt;template&amp;gt;  &amp;lt;el-table :data=&quot;tableData&quot;&amp;gt;    &amp;lt;el-table-column">
 
 
 
@@ -125,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://seadog16.github.io/"/>
+  <link rel="canonical" href="https://seadog16.github.io/2018/10/16/优雅的使用-element-ui-中的-table-组件/"/>
 
 
 
 
 
-  <title>暴风骤雨</title>
+  <title>优雅的使用 element-ui 中的 table 组件 | 暴风骤雨</title>
   
 
 
@@ -160,8 +162,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,9 +255,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -286,9 +287,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/16/优雅的使用-element-ui-中的-table-组件/" itemprop="url">优雅的使用 element-ui 中的 table 组件</a></h2>
+          <h2 class="post-title" itemprop="name headline">优雅的使用 element-ui 中的 table 组件</h2>
         
 
         <div class="post-meta">
@@ -371,9 +370,7 @@
       
 
       
-        
-          
-            <blockquote><p>作者：ywwhack<br>链接：<a href="https://juejin.im/post/5a100d09f265da4324800807" target="_blank" rel="noopener">https://juejin.im/post/5a100d09f265da4324800807</a><br>来源：掘金</p>
+        <blockquote><p>作者：ywwhack<br>链接：<a href="https://juejin.im/post/5a100d09f265da4324800807" target="_blank" rel="noopener">https://juejin.im/post/5a100d09f265da4324800807</a><br>来源：掘金</p>
 </blockquote>
 <p>经常使用 <a href="http://element-cn.eleme.io" target="_blank" rel="noopener">element-ui</a> 的小伙伴应该对 <code>el-table</code> 组件非常熟悉，通常它长下面这个样子：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-table</span> <span class="attr">:data</span>=<span class="string">"tableData"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-table-column</span></span></span><br><span class="line"><span class="tag">      <span class="attr">prop</span>=<span class="string">"date"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">label</span>=<span class="string">"日期"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">el-table-column</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-table-column</span></span></span><br><span class="line"><span class="tag">      <span class="attr">prop</span>=<span class="string">"name"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">label</span>=<span class="string">"姓名"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">el-table-column</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-table-column</span></span></span><br><span class="line"><span class="tag">      <span class="attr">prop</span>=<span class="string">"address"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">label</span>=<span class="string">"地址"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">el-table-column</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">export default &#123;</span></span><br><span class="line"><span class="undefined">  data () &#123;</span></span><br><span class="line"><span class="undefined">    return &#123;</span></span><br><span class="line"><span class="undefined">      tableData: [&#123;</span></span><br><span class="line"><span class="undefined">        date: '2016-05-02',</span></span><br><span class="line"><span class="undefined">        name: '王小虎',</span></span><br><span class="line"><span class="undefined">        address: '上海市普陀区金沙江路 1518 弄'</span></span><br><span class="line"><span class="undefined">      &#125;, &#123;</span></span><br><span class="line"><span class="undefined">        date: '2016-05-04',</span></span><br><span class="line"><span class="undefined">        name: '王小虎',</span></span><br><span class="line"><span class="undefined">        address: '上海市普陀区金沙江路 1517 弄'</span></span><br><span class="line"><span class="undefined">      &#125;]</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -402,8 +399,6 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">my-table</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:data</span>=<span class="string">"tableData"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:col-configs</span>=<span class="string">"colConfigs"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">my-table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">const PrefixPlusText = &#123;</span></span><br><span class="line"><span class="undefined">  props: ['colConfig'],</span></span><br><span class="line"><span class="undefined">  template: `</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">el-table-column</span> <span class="attr">:label</span>=<span class="string">"colConfig.label"</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">:slot-scope</span>=<span class="string">"&#123; row &#125;"</span>&gt;</span></span></span><br><span class="line"><span class="undefined">        &#123;&#123; parseInt(row[colConfig.prop]) &gt; 0 ? '+' + row[colConfig.prop] : row[colConfig.prop] &#125;&#125;</span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">el-table-column</span>&gt;</span></span></span><br><span class="line"><span class="undefined">  `</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">export default &#123;</span></span><br><span class="line"><span class="undefined">  data () &#123;</span></span><br><span class="line"><span class="undefined">    this.colConfigs = [</span></span><br><span class="line"><span class="undefined">      &#123; prop: 'change', label: '变化' component: PrefixPlusText &#125;,</span></span><br><span class="line"><span class="undefined">      &#123; prop: 'name', label: '趋势', component: PrefixPlusText &#125;,</span></span><br><span class="line"><span class="undefined">    ]</span></span><br><span class="line"><span class="undefined">    return &#123;</span></span><br><span class="line"><span class="undefined">      tableData: [&#123;</span></span><br><span class="line"><span class="undefined">        change: '12%',</span></span><br><span class="line"><span class="undefined">        trend: '10%</span></span><br><span class="line"><span class="undefined">      &#125;, &#123;</span></span><br><span class="line"><span class="undefined">        change: '-12%',</span></span><br><span class="line"><span class="undefined">        trend: '-10%'</span></span><br><span class="line"><span class="undefined">      &#125;]</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p><code>table</code> 作为数据展示组件，在日常开发中经常被用到，通过这篇文章，可以看到结合 <code>vue</code> 的 <code>slot/component</code> 特性，做一层封装，可以大大简化 <code>table</code> 的使用，大部分时候只需写一个配置属性就可以了。</p>
 
-          
-        
       
     </div>
     
@@ -418,14 +413,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Vue-js/" rel="tag"># Vue.js</a>
+          
+            <a href="/tags/Element/" rel="tag"># Element</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -435,10 +440,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -446,6 +452,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -466,8 +486,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -531,6 +560,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-v-for-来优化模版中的-el-table-column"><span class="nav-number">1.</span> <span class="nav-text">使用 v-for 来优化模版中的 el-table-column</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#巧用-slot，为-el-table-封装一层"><span class="nav-number">2.</span> <span class="nav-text">巧用 slot，为 el-table 封装一层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-is-”component”"><span class="nav-number">3.</span> <span class="nav-text">使用 :is=”component”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -671,6 +716,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -688,6 +737,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://seadog16.github.io/2018/10/16/优雅的使用-element-ui-中的-table-组件/';
+          this.page.identifier = '2018/10/16/优雅的使用-element-ui-中的-table-组件/';
+          this.page.title = '优雅的使用 element-ui 中的 table 组件';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
